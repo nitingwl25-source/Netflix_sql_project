@@ -14,4 +14,30 @@ Explore and categorize content based on specific criteria and keywords.
 ## Dataset
 The data for this project is sourced from the Kaggle dataset:
 
-## Dataset Link: Movies Dataset
+CREATE TABLE netflix (
+    show_id       VARCHAR(10),
+    type          VARCHAR(10),
+    title         VARCHAR(150),
+    director      VARCHAR(208),
+    casts         VARCHAR(1000),
+    country       VARCHAR(150),
+    date_added    VARCHAR(50),
+    release_year  INT,
+    rating        VARCHAR(10),
+    duration      VARCHAR(15),
+    listed_in     VARCHAR(155),
+    description   VARCHAR(250)
+);
+
+
+##  15 BUSINESS PROBLEMS
+
+
+```sql-- 1. Count the number of Movies vs TV Shows
+SELECT 
+    type,
+    COUNT(*) AS total_count
+FROM netflix
+GROUP BY type;
+```
+
