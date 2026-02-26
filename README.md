@@ -14,6 +14,8 @@ Explore and categorize content based on specific criteria and keywords.
 ## Dataset
 The data for this project is sourced from the Kaggle dataset:
 
+## Create Table
+```sql
 CREATE TABLE netflix (
     show_id       VARCHAR(10),
     type          VARCHAR(10),
@@ -28,7 +30,7 @@ CREATE TABLE netflix (
     listed_in     VARCHAR(155),
     description   VARCHAR(250)
 );
-
+```
 
 ##  15 BUSINESS PROBLEMS
 
