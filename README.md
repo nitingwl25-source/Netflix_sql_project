@@ -43,7 +43,8 @@ GROUP BY type;
 
 
 ## -- 2. Find the most common rating for Movies and TV Shows
-```sql SELECT 
+```sql
+SELECT 
     type,
     rating
 FROM (
@@ -58,12 +59,13 @@ FROM (
 WHERE ranking = 1;```
 
 
-
 ## -- 3. List all movies released in 2020
-```sql SELECT *
+```sql
+SELECT *
 FROM netflix
 WHERE type = 'Movie'
-  AND release_year = 2020;```
+  AND release_year = 2020;
+```
 
 
 
